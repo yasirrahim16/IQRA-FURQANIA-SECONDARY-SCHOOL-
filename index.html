@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iqra Furqania Secondary School</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f2027;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#00f7ff;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00f7ff;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1588072432836-e10032774350') center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding-top:80px;
+}
+
+.hero h1{
+font-size:45px;
+background:rgba(0,0,0,0.6);
+padding:15px 30px;
+border-radius:10px;
+}
+
+.hero p{
+margin-top:15px;
+background:rgba(0,0,0,0.6);
+padding:10px 20px;
+border-radius:10px;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#00f7ff;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
+
+/* SECTION */
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+color:#00f7ff;
+}
+
+/* ABOUT */
+.about-box{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:40px;
+}
+
+.about-box img{
+width:200px;
+height:200px;
+border-radius:50%;
+border:4px solid #00f7ff;
+box-shadow:0 0 25px #00f7ff;
+}
+
+.about-text{
+max-width:500px;
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:15px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* DOWNLOAD */
+.download-box{
+text-align:center;
+background:#1c2b33;
+padding:30px;
+border-radius:15px;
+}
+
+/* FOOTER */
+footer{
+background:black;
+text-align:center;
+padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav ul{
+display:none;
+}
+.hero h1{
+font-size:28px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">IQRA SCHOOL</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h1>Welcome to Iqra Furqania Secondary School</h1>
+<p>1200+ Students Experience | Excellence in Education</p>
+<a href="#about"><button class="btn">Explore More</button></a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">Principal Message</h2>
+<div class="about-box">
+<img src="yasir.jpg">
+<div class="about-text">
+<p>Welcome dear students. Work hard and achieve success.  
+Our school provides quality Islamic and modern education with discipline and dedication.</p>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2 class="section-title">School Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+<img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b">
+<img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178">
+<img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc">
+</div>
+</section>
+
+<!-- BOOK DOWNLOAD -->
+<section id="books">
+<h2 class="section-title">Download Books</h2>
+<div class="download-box">
+<h3>10th Class Physics Book</h3>
+<br>
+<a href="physics10.pdf" download>
+<button class="btn">Download Physics PDF</button>
+</a>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+<div class="download-box">
+<p>Email: sadiqyasir1631@gmail.com</p>
+<br>
+<a href="https://maps.app.goo.gl/ZNCW96czT3S9QKAt5" target="_blank">
+<button class="btn">Open in Google Maps</button>
+</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Iqra Furqania Secondary School | Designed by Yasir Rahim</p>
+</footer>
+
+</body>
+</html>
