@@ -3,58 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iqra Furqania Secondary School</title>
+<title>IQRA FURQANIA SECONDARY SCHOOL</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>img {
-    max-width: 100%;
-    height: auto;
-}.gallery img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-}.hero img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}img {
-    width: 100%;
-    height: auto;
-}
-.student-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-}
-
-.student-section h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.student-section p {
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 25px;
-    font-size: 16px;
-    color: #555;
-}
-
-.student-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #00bcd4;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.student-btn:hover {
-    background-color: #0097a7;
-}
+<style>
 
 *{
 margin:0;
@@ -65,51 +18,6 @@ scroll-behavior:smooth;
 }
 
 body{
-    <div class="student-link">
-    <a href="https://sites.google.com/view/resourcespointstudent/home" target="_blank">
-        Student Portal - Yasir Raheem
-    </a>
-</div>
-  <section class="student-section">
-    <h2>Student Resource Portal</h2>
-    <p>
-        Access study materials, important updates, and educational resources 
-        designed specially for our students.
-    </p>
-
-    <a href="https://sites.google.com/view/resourcespointstudent/home" 
-       target="_blank" 
-       class="student-btn">
-       Visit Student Portal
-    </a>
-</section>
-  <h1>Student Yasir Rahim</h1>
-
-<p>
-  <a href="https://sites.google.com/view/resourcespointstudent/home" target="_blank">
-    Open Student Website
-  </a>
-</p>
-  <div style="display:flex; justify-content:center; align-items:center; height:100vh; background:linear-gradient(135deg,#1e3c72,#2a5298); font-family:Arial, sans-serif; text-align:center;">
-
-  <div style="background:white; padding:40px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.2); max-width:400px; width:90%;">
-    
-    <h1 style="margin-bottom:10px; color:#1e3c72;">Student Website</h1>
-    
-    <h2 style="margin-top:0; color:#555;">Yasir Rahim</h2>
-    
-    <p style="color:#777; font-size:14px;">
-      Click below to visit the official student resource website.
-    </p>
-    
-    <a href="https://sites.google.com/view/resourcespointstudent/home" target="_blank" 
-       style="display:inline-block; margin-top:20px; padding:12px 25px; background:#1e3c72; color:white; text-decoration:none; border-radius:8px; font-weight:bold; transition:0.3s;">
-       Visit Website
-    </a>
-
-  </div>
-
-</div>
 background:#0f2027;
 color:white;
 }
@@ -129,7 +37,7 @@ z-index:1000;
 }
 
 .logo{
-font-size:22px;
+font-size:20px;
 font-weight:bold;
 color:#00f7ff;
 }
@@ -159,14 +67,15 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding-top:80px;
+padding:20px;
 }
 
 .hero h1{
-font-size:45px;
+font-size:40px;
 background:rgba(0,0,0,0.6);
 padding:15px 30px;
 border-radius:10px;
+animation:fadeIn 2s ease-in-out;
 }
 
 .hero p{
@@ -195,12 +104,12 @@ transform:scale(1.05);
 
 /* SECTION */
 section{
-padding:80px 10%;
+padding:100px 10%;
 }
 
 .section-title{
 text-align:center;
-font-size:32px;
+font-size:30px;
 margin-bottom:40px;
 color:#00f7ff;
 }
@@ -220,6 +129,7 @@ height:200px;
 border-radius:50%;
 border:4px solid #00f7ff;
 box-shadow:0 0 25px #00f7ff;
+object-fit:cover;
 }
 
 .about-text{
@@ -245,8 +155,8 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
-/* DOWNLOAD */
-.download-box{
+/* BOX */
+.box{
 text-align:center;
 background:#1c2b33;
 padding:30px;
@@ -260,22 +170,24 @@ text-align:center;
 padding:20px;
 }
 
-/* RESPONSIVE */
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
 @media(max-width:768px){
-nav ul{
-display:none;
+nav ul{display:none;}
+.hero h1{font-size:25px;}
 }
-.hero h1{
-font-size:28px;
-}
-}
+
 </style>
 </head>
 
 <body>
 
 <nav>
-<div class="logo">IQRA SCHOOL</div>
+<div class="logo">IQRA FURQANIA SCHOOL</div>
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -285,26 +197,23 @@ font-size:28px;
 </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="home">
-<h1>Welcome to Iqra Furqania Secondary School</h1>
-<p>1200+ Students Experience | Excellence in Education</p>
+<h1>Welcome to IQRA FURQANIA SECONDARY SCHOOL</h1>
+<p>Excellence in Islamic & Modern Education</p>
 <a href="#about"><button class="btn">Explore More</button></a>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
 <h2 class="section-title">Principal Message</h2>
 <div class="about-box">
-<img src="yasir.jpg">
+<img src="https://drive.google.com/uc?export=view&id=1vn8v2hwjPUumG927SvVx99JCvKTF9dNe" alt="Principal Photo">
 <div class="about-text">
-<p>Welcome dear students. Work hard and achieve success.  
+<p>Welcome dear students. Work hard and achieve success.
 Our school provides quality Islamic and modern education with discipline and dedication.</p>
 </div>
 </div>
 </section>
 
-<!-- GALLERY -->
 <section id="gallery">
 <h2 class="section-title">School Gallery</h2>
 <div class="gallery">
@@ -315,35 +224,40 @@ Our school provides quality Islamic and modern education with discipline and ded
 </div>
 </section>
 
-<!-- BOOK DOWNLOAD -->
 <section id="books">
 <h2 class="section-title">Download Books</h2>
-<div class="download-box">
+<div class="box">
 <h3>10th Class Physics Book</h3>
 <br>
 <a href="physics10.pdf" download>
-<button class="btn">Download Physics PDF</button>
+<button class="btn" onclick="clickSound()">Download Physics PDF</button>
 </a>
 </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
 <h2 class="section-title">Contact Us</h2>
-<div class="download-box">
+<div class="box">
 <p>Email: sadiqyasir1631@gmail.com</p>
 <br>
 <a href="https://maps.app.goo.gl/ZNCW96czT3S9QKAt5" target="_blank">
-<button class="btn">Open in Google Maps</button>
+<button class="btn" onclick="clickSound()">Open in Google Maps</button>
 </a>
 </div>
 </section>
 
 <footer>
-<p>© 2026 Iqra Furqania Secondary School | Designed by Yasir Rahim</p>
+<p>© 2026 IQRA FURQANIA SECONDARY SCHOOL | Designed by Yasir Rahim</p>
 </footer>
 
+<!-- CLICK SOUND -->
+<audio id="clickAudio" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+
+<script>
+function clickSound(){
+document.getElementById("clickAudio").play();
+}
+</script>
+
 </body>
-</html><div class="principal-photo">
-  <img src="https://drive.google.com/uc?export=view&id=1vn8v2hwjPUumG927SvVx99JCvKTF9dNe" alt="Principal Photo">
-</div>
+</html>
