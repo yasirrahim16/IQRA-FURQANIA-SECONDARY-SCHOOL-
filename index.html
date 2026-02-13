@@ -269,15 +269,15 @@ Our school provides quality Islamic and modern education with discipline and ded
 <footer>
 <p>© 2026 IQRA FURQANIA SECONDARY SCHOOL | Designed by Yasir Rahim</p>
 </footer>
-
-<!-- CLICK SOUND -->
-<audio id="clickAudio" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
-
+<audio id="clickAudio" preload="auto">
+  <source src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3" type="audio/mpeg">
+</audio>
 <script>
 function clickSound(){
-document.getElementById("clickAudio").play();
+  var audio = document.getElementById("clickAudio");
+  audio.currentTime = 0;
+  audio.play();
 }
 </script>
-
 </body>
 </html>
